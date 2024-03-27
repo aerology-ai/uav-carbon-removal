@@ -63,13 +63,13 @@ num_actions = 9
 
 LEARNING_RATE = 0.1
 DISCOUNT_FACTOR = 0.95
-EPISODES = 60000
+EPISODES = 600000
 
 actual_altitude = 5400
 
 epsilon = 1.0  # Initial epsilon
 epsilon_min = 0.01  # Minimum epsilon value
-epsilon_decay = 0.9999125  # Decay factor
+epsilon_decay = 0.9999925  # Decay factor
 
 q_table = np.zeros((num_lat_steps, num_lon_steps, num_days, num_daily_timesteps, num_actions))
 logging.info(f"Q-table created with shape: {q_table.shape}")
